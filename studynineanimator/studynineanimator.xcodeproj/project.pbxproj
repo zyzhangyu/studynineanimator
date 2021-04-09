@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,16 @@
 		8BC9C02E261FE3E500CAE944 /* AnimeLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C02D261FE3E500CAE944 /* AnimeLink.swift */; };
 		8BC9C031261FE40B00CAE944 /* FeaturedAnimePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C030261FE40B00CAE944 /* FeaturedAnimePage.swift */; };
 		8BC9C035261FE5BA00CAE944 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C034261FE5BA00CAE944 /* FeaturedViewController.swift */; };
+		8BC9C03C261FF48F00CAE944 /* RecentlyUpdatedAnimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C03B261FF48F00CAE944 /* RecentlyUpdatedAnimeTableViewCell.swift */; };
+		8BC9C044261FFAB700CAE944 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C043261FFAB700CAE944 /* Anime.swift */; };
+		8BC9C048261FFB6A00CAE944 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8BC9C047261FFB6A00CAE944 /* Kingfisher */; };
+		8BC9C04C261FFCAB00CAE944 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8BC9C04B261FFCAB00CAE944 /* Alamofire */; };
+		8BC9C050261FFD0300CAE944 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 8BC9C04F261FFD0300CAE944 /* SwiftSoup */; };
+		8BC9C0542620304100CAE944 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8BC9C0532620304100CAE944 /* AlamofireImage */; };
+		8BC9C05926203AD200CAE944 /* ServerPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C05826203AD100CAE944 /* ServerPickerTableViewCell.swift */; };
+		8BC9C05C26203B5100CAE944 /* AnimeDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C05B26203B5100CAE944 /* AnimeDescriptionTableViewCell.swift */; };
+		8BC9C05F26203BCD00CAE944 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C05E26203BCD00CAE944 /* Episode.swift */; };
+		8BC9C06326203CED00CAE944 /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C06226203CED00CAE944 /* AnimeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +54,12 @@
 		8BC9C02D261FE3E500CAE944 /* AnimeLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeLink.swift; sourceTree = "<group>"; };
 		8BC9C030261FE40B00CAE944 /* FeaturedAnimePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedAnimePage.swift; sourceTree = "<group>"; };
 		8BC9C034261FE5BA00CAE944 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
+		8BC9C03B261FF48F00CAE944 /* RecentlyUpdatedAnimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyUpdatedAnimeTableViewCell.swift; sourceTree = "<group>"; };
+		8BC9C043261FFAB700CAE944 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		8BC9C05826203AD100CAE944 /* ServerPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPickerTableViewCell.swift; sourceTree = "<group>"; };
+		8BC9C05B26203B5100CAE944 /* AnimeDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		8BC9C05E26203BCD00CAE944 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		8BC9C06226203CED00CAE944 /* AnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC9C048261FFB6A00CAE944 /* Kingfisher in Frameworks */,
+				8BC9C0542620304100CAE944 /* AlamofireImage in Frameworks */,
+				8BC9C04C261FFCAB00CAE944 /* Alamofire in Frameworks */,
+				8BC9C050261FFD0300CAE944 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +126,9 @@
 				8BC9C01D261FDCDD00CAE944 /* FeaturedAnimationView.swift */,
 				8BC9C015261F000000CAE944 /* FeaturedAnimeTableViewCell.swift */,
 				8BC9C021261FDD8B00CAE944 /* UIView+BackgroundShadow.swift */,
+				8BC9C03B261FF48F00CAE944 /* RecentlyUpdatedAnimeTableViewCell.swift */,
+				8BC9C05826203AD100CAE944 /* ServerPickerTableViewCell.swift */,
+				8BC9C05B26203B5100CAE944 /* AnimeDescriptionTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +148,8 @@
 				8BC9C02A261FE0C400CAE944 /* NineAnimatePath.swift */,
 				8BC9C02D261FE3E500CAE944 /* AnimeLink.swift */,
 				8BC9C030261FE40B00CAE944 /* FeaturedAnimePage.swift */,
+				8BC9C043261FFAB700CAE944 /* Anime.swift */,
+				8BC9C05E26203BCD00CAE944 /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -133,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8BC9C034261FE5BA00CAE944 /* FeaturedViewController.swift */,
+				8BC9C06226203CED00CAE944 /* AnimeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -153,6 +179,12 @@
 			dependencies = (
 			);
 			name = studynineanimator;
+			packageProductDependencies = (
+				8BC9C047261FFB6A00CAE944 /* Kingfisher */,
+				8BC9C04B261FFCAB00CAE944 /* Alamofire */,
+				8BC9C04F261FFD0300CAE944 /* SwiftSoup */,
+				8BC9C0532620304100CAE944 /* AlamofireImage */,
+			);
 			productName = studynineanimator;
 			productReference = 8BC9BFF1261EF5F200CAE944 /* studynineanimator.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +212,12 @@
 				Base,
 			);
 			mainGroup = 8BC9BFE8261EF5F200CAE944;
+			packageReferences = (
+				8BC9C046261FFB6A00CAE944 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				8BC9C04A261FFCAB00CAE944 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8BC9C04E261FFD0300CAE944 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				8BC9C0522620304100CAE944 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 8BC9BFF2261EF5F200CAE944 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,13 +248,19 @@
 			files = (
 				8BC9C016261F000000CAE944 /* FeaturedAnimeTableViewCell.swift in Sources */,
 				8BC9C035261FE5BA00CAE944 /* FeaturedViewController.swift in Sources */,
+				8BC9C05926203AD200CAE944 /* ServerPickerTableViewCell.swift in Sources */,
 				8BC9BFF9261EF5F200CAE944 /* ViewController.swift in Sources */,
 				8BC9C028261FE05600CAE944 /* NineAnimator.swift in Sources */,
 				8BC9C031261FE40B00CAE944 /* FeaturedAnimePage.swift in Sources */,
+				8BC9C05F26203BCD00CAE944 /* Episode.swift in Sources */,
+				8BC9C06326203CED00CAE944 /* AnimeViewController.swift in Sources */,
 				8BC9BFF5261EF5F200CAE944 /* AppDelegate.swift in Sources */,
 				8BC9C02E261FE3E500CAE944 /* AnimeLink.swift in Sources */,
 				8BC9C02B261FE0C400CAE944 /* NineAnimatePath.swift in Sources */,
 				8BC9C022261FDD8B00CAE944 /* UIView+BackgroundShadow.swift in Sources */,
+				8BC9C03C261FF48F00CAE944 /* RecentlyUpdatedAnimeTableViewCell.swift in Sources */,
+				8BC9C044261FFAB700CAE944 /* Anime.swift in Sources */,
+				8BC9C05C26203B5100CAE944 /* AnimeDescriptionTableViewCell.swift in Sources */,
 				8BC9C01B261FD9FD00CAE944 /* String+IntregerRangeSubstring.swift in Sources */,
 				8BC9BFF7261EF5F200CAE944 /* SceneDelegate.swift in Sources */,
 				8BC9C01E261FDCDD00CAE944 /* FeaturedAnimationView.swift in Sources */,
@@ -421,6 +465,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BC9C046261FFB6A00CAE944 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
+		8BC9C04A261FFCAB00CAE944 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.2;
+			};
+		};
+		8BC9C04E261FFD0300CAE944 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+		8BC9C0522620304100CAE944 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BC9C047261FFB6A00CAE944 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BC9C046261FFB6A00CAE944 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		8BC9C04B261FFCAB00CAE944 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BC9C04A261FFCAB00CAE944 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8BC9C04F261FFD0300CAE944 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BC9C04E261FFD0300CAE944 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		8BC9C0532620304100CAE944 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BC9C0522620304100CAE944 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8BC9BFE9261EF5F200CAE944 /* Project object */;
 }
