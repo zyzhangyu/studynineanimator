@@ -10,10 +10,11 @@ import Foundation
 
 
 struct NineAnimatePath : Hashable {
-    static let home = NineAnimatePath("/")
+    static let home = NineAnimatePath("/newseason/1")
     
     static func search(keyword: String?) -> NineAnimatePath {
         var path = "/search"
+        
         
         
         /*
@@ -23,6 +24,20 @@ struct NineAnimatePath : Hashable {
            let wrappedKeyword = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         { path += wrappedKeyword }
         
+        return NineAnimatePath(path)
+    }
+    
+    static func anime(keyword: String?) -> NineAnimatePath {
+        
+//        func asURL() -> URL { return URL.init(string: NineAnimator.default.endpoint + "/details/\(link)")!}
+
+        var path = "/details/"
+        
+        if let keyword = keyword,
+           let wrappedKeyword = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        {path += wrappedKeyword}
+        
+        print("最终组成的path", path)
         return NineAnimatePath(path)
     }
     

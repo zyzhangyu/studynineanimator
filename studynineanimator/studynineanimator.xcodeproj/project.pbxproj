@@ -33,6 +33,7 @@
 		8BC9C05C26203B5100CAE944 /* AnimeDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C05B26203B5100CAE944 /* AnimeDescriptionTableViewCell.swift */; };
 		8BC9C05F26203BCD00CAE944 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C05E26203BCD00CAE944 /* Episode.swift */; };
 		8BC9C06326203CED00CAE944 /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C06226203CED00CAE944 /* AnimeViewController.swift */; };
+		8BC9C37A26258CE700CAE944 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC9C37926258CE700CAE944 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		8BC9C05B26203B5100CAE944 /* AnimeDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		8BC9C05E26203BCD00CAE944 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		8BC9C06226203CED00CAE944 /* AnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewController.swift; sourceTree = "<group>"; };
+		8BC9C37926258CE700CAE944 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		8BC9C019261FD9B200CAE944 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8BC9C37926258CE700CAE944 /* SwiftyJSON.swift */,
 				8BC9C01A261FD9FD00CAE944 /* String+IntregerRangeSubstring.swift */,
 			);
 			path = Utilities;
@@ -253,6 +256,7 @@
 				8BC9C028261FE05600CAE944 /* NineAnimator.swift in Sources */,
 				8BC9C031261FE40B00CAE944 /* FeaturedAnimePage.swift in Sources */,
 				8BC9C05F26203BCD00CAE944 /* Episode.swift in Sources */,
+				8BC9C37A26258CE700CAE944 /* SwiftyJSON.swift in Sources */,
 				8BC9C06326203CED00CAE944 /* AnimeViewController.swift in Sources */,
 				8BC9BFF5261EF5F200CAE944 /* AppDelegate.swift in Sources */,
 				8BC9C02E261FE3E500CAE944 /* AnimeLink.swift in Sources */,

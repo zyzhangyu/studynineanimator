@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "349933A0-081E-4B1E-97BD-8DAAADEA7BC3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Models/FeaturedAnimePage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "loadHomePage(completionHandler:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "349933A0-081E-4B1E-97BD-8DAAADEA7BC3 - 3d91f1360849dbe5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "studynineanimator.NineAnimator.loadHomePage(completionHandler: (Swift.Optional&lt;studynineanimator.FeaturedAnimePage&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "studynineanimator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/developer/Documents/GitHub/studynineanimator/studynineanimator/Models/FeaturedAnimePage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "49">
-               </Location>
-               <Location
-                  uuid = "349933A0-081E-4B1E-97BD-8DAAADEA7BC3 - 55a75cbf76819c94"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in studynineanimator.NineAnimator.loadHomePage(completionHandler: (Swift.Optional&lt;studynineanimator.FeaturedAnimePage&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "studynineanimator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/developer/Documents/GitHub/studynineanimator/studynineanimator/Models/FeaturedAnimePage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "268">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A6A0BB0A-1A65-47BB-992B-21F46A2F01B8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -62,42 +14,10 @@
             filePath = "Models/Anime.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "anime(with:onCompletion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A6A0BB0A-1A65-47BB-992B-21F46A2F01B8 - 5a28a5a2de748f78"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "studynineanimator.NineAnimator.anime(with: studynineanimator.AnimeLink, onCompletion: (Swift.Optional&lt;studynineanimator.Anime&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "studynineanimator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/developer/Documents/GitHub/studynineanimator/studynineanimator/Models/Anime.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "216">
-               </Location>
-               <Location
-                  uuid = "A6A0BB0A-1A65-47BB-992B-21F46A2F01B8 - 32c4e8ca6a6c6ed1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.String, Alamofire.AFError&gt;) -&gt; () in studynineanimator.NineAnimator.anime(with: studynineanimator.AnimeLink, onCompletion: (Swift.Optional&lt;studynineanimator.Anime&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "studynineanimator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/developer/Documents/GitHub/studynineanimator/studynineanimator/Models/Anime.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "361">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -110,42 +30,154 @@
             filePath = "Models/Anime.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "parse(_:page:with:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F273BA76-C9F4-4448-8471-CED8ECA23188"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/AnimeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DE17AB6-3296-49E0-B81A-568052E302CC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/AnimeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "30A718ED-B26E-4AF8-9CE1-DC356853B440 - 40a13703ed12a494"
+                  uuid = "6DE17AB6-3296-49E0-B81A-568052E302CC - 44a3a12ff07c5809"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static studynineanimator.Anime.(parse in _E4D5119C49C51E160C6975CC01633DAC)(_: studynineanimator.AnimeLink, page: Swift.String, with: Alamofire.Session, onCompletion: (Swift.Optional&lt;studynineanimator.Anime&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "studynineanimator.AnimeViewController.viewWillAppear(Swift.Bool) -&gt; ()"
                   moduleName = "studynineanimator"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/developer/Documents/GitHub/studynineanimator/studynineanimator/Models/Anime.swift"
+                  urlString = "file:///Users/developer/Documents/GitHub/studynineanimator/studynineanimator/Controller/AnimeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "164"
-                  endingLineNumber = "164"
-                  offsetFromSymbolStart = "2110">
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "814">
                </Location>
                <Location
-                  uuid = "30A718ED-B26E-4AF8-9CE1-DC356853B440 - 334815cb41e16c5d"
+                  uuid = "6DE17AB6-3296-49E0-B81A-568052E302CC - 62bad2f36224f923"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #5 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in static studynineanimator.Anime.(parse in _E4D5119C49C51E160C6975CC01633DAC)(_: studynineanimator.AnimeLink, page: Swift.String, with: Alamofire.Session, onCompletion: (Swift.Optional&lt;studynineanimator.Anime&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;studynineanimator.Anime&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in studynineanimator.AnimeViewController.viewWillAppear(Swift.Bool) -&gt; ()"
                   moduleName = "studynineanimator"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/developer/Documents/GitHub/studynineanimator/studynineanimator/Models/Anime.swift"
+                  urlString = "file:///Users/developer/Documents/GitHub/studynineanimator/studynineanimator/Controller/AnimeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "166"
-                  endingLineNumber = "166"
-                  offsetFromSymbolStart = "667">
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "199">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "592CB9DE-1442-4276-A273-3DB302038C40"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Models/Anime.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "anime(with:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E82F39E1-ECDA-4EFA-A986-D1382D01843B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/AnimeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2748A358-C88C-484A-AEAA-79DDDDD5BC24"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/AnimeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F819E8F-FD21-4117-8723-F3F4039CAB69"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Models/Anime.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "anime(with:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C59C6094-6907-48B2-A0F8-C33DED4CE603"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Models/NineAnimatePath.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "anime(keyword:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

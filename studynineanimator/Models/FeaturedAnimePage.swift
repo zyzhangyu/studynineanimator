@@ -9,7 +9,6 @@ import Foundation
 
 
 struct FeaturedAnimePage {
-    static let featuredAnimesRegex = try! NSRegularExpression(pattern: "<div class=\"item swiper-slide\" style=\"background-image: url\\(([^)]+)\\)[^h]+href=\"([^\"]+)\">([^<]+)", options: .caseInsensitive)
     
     static let latestUpdateAnimesRegex = try! NSRegularExpression(pattern: "(https:\\/\\/www1.9anime.to\\/watch[^\"]+)\"[^>]+>\\s+\\<img src=\"(https[^\"]+)\" alt=\"([^\"]+)[^>]+>", options: .caseInsensitive)
     
@@ -20,20 +19,35 @@ struct FeaturedAnimePage {
     init?(_ pageSource: String) throws{
         print("FeaturedAnimePage init : ", pageSource)
         
-        let featuredAnimesMatches = FeaturedAnimePage.featuredAnimesRegex.matches(in: pageSource, options: [], range: pageSource.matchingRange)
-        self.featured = try featuredAnimesMatches.map {
-            guard let imageLink = URL(string: pageSource[$0.range(at: 1)]) else { throw NineAnimatorError.responseError("parser error") }
-            guard let animeLink = URL(string: pageSource[$0.range(at: 2)]) else { throw NineAnimatorError.responseError("parser error") }
-            let title = pageSource[$0.range(at: 3)]
-            return AnimeLink(title: title, link: animeLink, image: imageLink)
-        }
         
-        let latestAnimesMatches = FeaturedAnimePage.latestUpdateAnimesRegex.matches(in: pageSource, options: [], range: pageSource.matchingRange)
-        self.latest = try latestAnimesMatches.map{
-            guard let imageLink = URL(string: pageSource[$0.range(at: 2)]) else { throw NineAnimatorError.responseError("parser error") }
-            guard let animeLink = URL(string: pageSource[$0.range(at: 1)]) else { throw NineAnimatorError.responseError("parser error") }
-            let title = pageSource[$0.range(at: 3)]
-            return AnimeLink(title: title, link: animeLink, image: imageLink)
+        
+        if let dataFromString = pageSource.data(using: .utf8, allowLossyConversion: false)  {
+            
+            let json = try! JSON(data: dataFromString)
+            
+            
+            let arrayResults = json["results"].arrayValue.map { (item) -> AnimeLink in
+                
+                print("打印每一个item", item)
+                
+//                {
+//                  "title" : "Nomad: Megalo Box 2",
+//                  "id" : "nomad-megalo-box-2",
+//                  "image" : "https:\/\/gogocdn.net\/cover\/nomad-megalo-box-2.png"
+//                }
+                
+                let str:String = item["image"].stringValue
+                let imageLink = URL.init(string: str);
+                let title = item["title"].stringValue
+                let idValue = item["id"].stringValue
+                return AnimeLink.init(title: title, link: idValue, image: imageLink!)
+            }
+            
+            self.featured = arrayResults
+            self.latest = [];
+        }else {
+            self.featured = []
+            self.latest = [];
         }
     }
 }
@@ -55,7 +69,10 @@ extension NineAnimator {
             }
             
             do{
+                print("这里也回来了,哪里报错了呢" )
+
                 let page = try FeaturedAnimePage(content!)
+                print(page)
                 completionHandler(page, nil)
             } catch let e {
                 self.removeCache(at: .home)

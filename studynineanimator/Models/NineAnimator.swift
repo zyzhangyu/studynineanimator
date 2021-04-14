@@ -18,7 +18,7 @@ enum NineAnimatorError: Error {
 class NineAnimator: Alamofire.SessionDelegate {
     static var `default` = NineAnimator()
     
-    let endpoint = "https://www1.9anime.to"
+    let endpoint = "https://arrayanimeapi.vercel.app/api"
     
     let client = URLSession(configuration: .default)
     

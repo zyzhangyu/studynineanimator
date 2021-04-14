@@ -27,12 +27,18 @@ class FeaturedViewController: UITableViewController {
         if case .none = featuredAnimePage {
             NineAnimator.default.loadHomePage {
                 page, error in
+                
+                print("在controller查看网络请求返回的结果", page)
                 DispatchQueue.main.async {
                     self.featuredAnimePage = page
                     self.error = error
                 }
             }
         }
+        
+        
+        
+
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -87,7 +93,10 @@ class FeaturedViewController: UITableViewController {
                 featuredAnimePage?.featured,
                 featuredAnimePage?.latest
             ]
+            
             guard let animeLink = pools[selected.section]?[selected.item] else { return }
+            print("页面跳转的时候,传送的数据:",animeLink)
+
             playerViewController.link = animeLink
         }
     }

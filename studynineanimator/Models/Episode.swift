@@ -32,8 +32,11 @@ struct Episode {
 
 extension Anime {
     func episode(with link: EpisodeLink, onCompletion handler: @escaping NineAnimatorCallback<Episode>) {
-        let ajaxHeaders: Alamofire.HTTPHeaders = [ "Referer": self.link.link.absoluteString ]
         
+        ///这里我整了一下
+        let ajaxHeaders: Alamofire.HTTPHeaders = [ "Referer": self.link.link ]
+//        let ajaxHeaders: Alamofire.HTTPHeaders = [ "Referer": self.link.link.absoluteString ]
+
         session
             .request(AjaxPath.episode(for: link.identifier, on: link.server), headers: ajaxHeaders)
             .responseJSON{

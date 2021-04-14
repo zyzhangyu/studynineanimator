@@ -11,22 +11,62 @@ import SwiftSoup
 
 extension NineAnimator {
     func anime(with link: AnimeLink, onCompletion handler: @escaping NineAnimatorCallback<Anime>) {
-        session.request(link).responseString{
-            response in
-            if case let .failure(error) = response.result {
-                debugPrint("Error: Failiure on request: \(error)")
+        
+        let path = NineAnimatePath.anime(keyword: link.link)
+        
+        request(path) { [self]
+            (content, error) in
+            if let error = error {
+                self.removeCache(at: .home)
+                print("首页请求错误",error)
                 handler(nil, error)
                 return
             }
             
-            guard let pageString = response.value else {
-                debugPrint("Error: No content received")
-                handler(nil, NineAnimatorError.responseError("no content received from server"))
-                return
+            do{
+                print("这里也回来了,哪里报错了呢" , content)
+                let dataFromString = content!.data(using: .utf8, allowLossyConversion: false)!
+                let json = try! JSON(data: dataFromString)
+                
+                print("~~~查看json", json)
+                
+                let description = json["summary"].stringValue;
+                let animeSession = self.session;
+                let animeServer : [Anime.ServerIdentifier: String] = ["shayemeiyou": "empty"];
+                let links:Anime.EpisodeLinksCollection = [
+                    (identifier:"buzhidao", name: "buzhidao", server: "buzhidao3", parent: link)
+                ]
+                let animeSpisodes : [Anime.ServerIdentifier:Anime.EpisodeLinksCollection] = ["shayemeiyou": links];
+                
+                
+                let animeItem = Anime.init(link, description: description, with: session, on: animeServer, episodes: animeSpisodes)
+                handler(animeItem, nil)
+            } catch let e {
+                self.removeCache(at: .home)
+                
+                print("首页请求错误-2",e)
+
+                handler(nil, e)
             }
-            
-            Anime.parse(link, page: pageString, with: self.ajaxSession, onCompletion: handler)
         }
+        
+        
+//        session.request(link).responseString{
+//            response in
+//            if case let .failure(error) = response.result {
+//                debugPrint("Error: Failiure on request: \(error)")
+//                handler(nil, error)
+//                return
+//            }
+//
+//            guard let pageString = response.value else {
+//                debugPrint("Error: No content received")
+//                handler(nil, NineAnimatorError.responseError("no content received from server"))
+//                return
+//            }
+//
+//            Anime.parse(link, page: pageString, with: self.ajaxSession, onCompletion: handler)
+//        }
     }
 }
 
@@ -44,6 +84,8 @@ struct Anime {
     let description: String
     
     var currentServer: ServerIdentifier
+    
+   
     
     init(_ link: AnimeLink,
          description: String,
@@ -109,7 +151,8 @@ extension Anime {
         var animeServers = [ServerIdentifier: String]()
         var animeEpisodes = [ServerIdentifier: EpisodeLinksCollection]()
         
-        let ajaxHeaders: Alamofire.HTTPHeaders = [ "Referer": link.link.absoluteString ]
+        let ajaxHeaders: Alamofire.HTTPHeaders = [ "Referer": link.link ]
+//        let ajaxHeaders: Alamofire.HTTPHeaders = [ "Referer": link.link.absoluteString ]
         
         let onRetriveServers: ((AFDataResponse<Any>) -> ()) = {
             response in

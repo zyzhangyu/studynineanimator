@@ -54,6 +54,8 @@ class AnimeViewController: UITableViewController, ServerPickerSelectionDelegate 
         //Update anime title
         title = link.title
         
+        print("link url ==>", link.asURL());
+        ///这是一个网络请求呀
         NineAnimator.default.anime(with: link){
             anime, error in
             guard let anime = anime else {
