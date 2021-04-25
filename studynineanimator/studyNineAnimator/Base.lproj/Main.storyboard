@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PDn-7N-dIx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 1-->
+        <scene sceneID="3u9-sd-sCW">
+            <objects>
+                <viewController id="Qdu-QV-s4w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YOh-hz-7xi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WnS-9h-Vzz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="crT-Tn-kI7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DYn-KX-MwM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="801"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="O2k-3A-t6C">
+            <objects>
+                <tabBarController id="PDn-7N-dIx" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="79g-Qm-A4d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aUD-6Y-wXc" kind="relationship" relationship="viewControllers" id="JOU-Kl-IEd"/>
+                        <segue destination="Qdu-QV-s4w" kind="relationship" relationship="viewControllers" id="tyo-z3-6gV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMZ-Db-7Or" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="445"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="afg-w4-hZS">
+            <objects>
+                <tableViewController id="5UR-08-cPX" customClass="FeaturedViewController" customModule="studyNineAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jik-7C-P5h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="anime.featured" textLabel="CNT-Yh-10s" detailTextLabel="kG4-T0-3aj" imageView="Ww6-lM-Vmf" style="IBUITableViewCellStyleSubtitle" id="VGN-So-PkI" customClass="FeaturedAnimeTableViewCell" customModule="studyNineAnimator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VGN-So-PkI" id="xby-9G-cb6">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CNT-Yh-10s">
+                                            <rect key="frame" x="91" y="10" width="33" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kG4-T0-3aj">
+                                            <rect key="frame" x="91" y="31.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="kingfisher-2.jpg" id="Ww6-lM-Vmf">
+                                            <rect key="frame" x="20" y="0.0" width="56" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="animeImageView" destination="Ww6-lM-Vmf" id="pec-Vm-WXf"/>
+                                    <outlet property="animeNameLabel" destination="CNT-Yh-10s" id="c4A-5L-Qn3"/>
+                                    <outlet property="descriptionLabel" destination="kG4-T0-3aj" id="DtI-Bw-ahH"/>
+                                    <segue destination="i7c-vf-9Nr" kind="show" id="BjN-uf-sl2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5UR-08-cPX" id="dbD-P3-m0H"/>
+                            <outlet property="delegate" destination="5UR-08-cPX" id="DI2-7W-Umi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="WLq-hD-BvF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E2H-59-aeq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2006" y="108"/>
+        </scene>
+        <!--AnimePlayer-->
+        <scene sceneID="r7c-dN-mER">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AnimePlayer" id="i7c-vf-9Nr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="trR-ZS-ocN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGU-XJ-z45" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2931" y="108"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="aRe-en-qPz">
+            <objects>
+                <navigationController id="aUD-6Y-wXc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="uAU-8m-k2G"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Taa-nR-hbx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5UR-08-cPX" kind="relationship" relationship="rootViewController" id="EFf-20-qxh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O50-Ms-1Na" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043" y="108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kingfisher-2.jpg" width="250" height="250"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
