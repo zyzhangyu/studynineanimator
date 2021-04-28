@@ -3,26 +3,77 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 1-->
-        <scene sceneID="3u9-sd-sCW">
+        <!--Search-->
+        <scene sceneID="ur2-Py-y9j">
             <objects>
-                <viewController id="Qdu-QV-s4w" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YOh-hz-7xi">
+                <tableViewController title="Search" id="45q-oN-YBO" customClass="SearchViewController" customModule="studyNineAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ATI-DU-C6u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="WnS-9h-Vzz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="crT-Tn-kI7"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DYn-KX-MwM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="anime.container.simple" textLabel="XfI-bF-p5l" style="IBUITableViewCellStyleDefault" id="pxa-kC-bt9" customClass="SimpleAnimeTableViewCell" customModule="studyNineAnimator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pxa-kC-bt9" id="S7c-qE-Xl6">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XfI-bF-p5l">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="zC3-sn-BFX" kind="show" id="rre-xu-PZG"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="45q-oN-YBO" id="IYn-SS-VOK"/>
+                            <outlet property="delegate" destination="45q-oN-YBO" id="QYu-zB-zRc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Search" id="ih5-pK-OoG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjl-PE-zrc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="801"/>
+            <point key="canvasLocation" x="2006" y="909"/>
+        </scene>
+        <!--AnimePlayer-->
+        <scene sceneID="6a5-mc-yaH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AnimePlayer" id="zC3-sn-BFX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lbV-y6-BYf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uz5-5h-ias" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2724" y="646"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="r5a-zk-P0Q">
+            <objects>
+                <navigationController id="enc-Hc-7gg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="magnifyingglass" catalog="system" id="cKX-Ja-z3O"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="OaB-as-9gj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="45q-oN-YBO" kind="relationship" relationship="rootViewController" id="aA0-P0-uA6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1g-hJ-dOa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="909"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="O2k-3A-t6C">
@@ -35,7 +86,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="aUD-6Y-wXc" kind="relationship" relationship="viewControllers" id="JOU-Kl-IEd"/>
-                        <segue destination="Qdu-QV-s4w" kind="relationship" relationship="viewControllers" id="tyo-z3-6gV"/>
+                        <segue destination="enc-Hc-7gg" kind="relationship" relationship="viewControllers" id="eBT-f2-CjG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HMZ-Db-7Or" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -127,6 +178,7 @@
     </scenes>
     <resources>
         <image name="kingfisher-2.jpg" width="250" height="250"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

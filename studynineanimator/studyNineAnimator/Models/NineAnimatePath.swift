@@ -16,13 +16,8 @@ struct NineAnimatePath : Hashable {
         return NineAnimatePath(path)
     }
     
-    static func search(keyword: String?) -> NineAnimatePath {
-        var path = "/search"
-        
-        if let keyword = keyword,
-           let wrappedKeyword = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        { path += wrappedKeyword }
-        
+    static func search(keyword: String, newPage: Int) -> NineAnimatePath {
+        let path = "/search/\(keyword)/\(newPage)"
         return NineAnimatePath(path)
     }
     

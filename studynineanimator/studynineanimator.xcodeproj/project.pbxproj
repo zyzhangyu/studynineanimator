@@ -71,6 +71,13 @@
 		8B9FBCDE26302C0600D0B1C1 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9FBCDD26302C0600D0B1C1 /* Anime.swift */; };
 		8B9FBCE0263294E000D0B1C1 /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9FBCDF263294E000D0B1C1 /* EpisodeTableViewCell.swift */; };
 		8B9FBCF82635125E00D0B1C1 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9FBCF72635125E00D0B1C1 /* Episode.swift */; };
+		8B9FBD052635645C00D0B1C1 /* SimpleAnimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9FBD042635645C00D0B1C1 /* SimpleAnimeTableViewCell.swift */; };
+		8B9FBD07263564BC00D0B1C1 /* AnimeSearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9FBD06263564BC00D0B1C1 /* AnimeSearchResultTableViewCell.swift */; };
+		8B9FBD0B2635735100D0B1C1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9FBD0A2635735100D0B1C1 /* SearchViewController.swift */; };
+		8B9FBD1B26365D5600D0B1C1 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9FBD1A26365D5600D0B1C1 /* SearchResultViewController.swift */; };
+		8B9FBD1D26365D9100D0B1C1 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9FBD1C26365D9100D0B1C1 /* SearchPage.swift */; };
+		8B9FBD1F2638EA0B00D0B1C1 /* SearchNoResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9FBD1E2638EA0B00D0B1C1 /* SearchNoResultsTableViewCell.swift */; };
+		8B9FBD302638FB2F00D0B1C1 /* TableViewCellCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9FBD2F2638FB2F00D0B1C1 /* TableViewCellCodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +211,13 @@
 		8B9FBCDD26302C0600D0B1C1 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
 		8B9FBCDF263294E000D0B1C1 /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		8B9FBCF72635125E00D0B1C1 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		8B9FBD042635645C00D0B1C1 /* SimpleAnimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnimeTableViewCell.swift; sourceTree = "<group>"; };
+		8B9FBD06263564BC00D0B1C1 /* AnimeSearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		8B9FBD0A2635735100D0B1C1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8B9FBD1A26365D5600D0B1C1 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		8B9FBD1C26365D9100D0B1C1 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		8B9FBD1E2638EA0B00D0B1C1 /* SearchNoResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNoResultsTableViewCell.swift; sourceTree = "<group>"; };
+		8B9FBD2F2638FB2F00D0B1C1 /* TableViewCellCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellCodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,10 +283,12 @@
 		8B9FBC33262FFADF00D0B1C1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8B9FBCFC2635644700D0B1C1 /* Search */,
 				8B9FBCD82630242000D0B1C1 /* Anime */,
 				8B9FBCD72630240C00D0B1C1 /* Featured */,
 				8B9FBC3A263005ED00D0B1C1 /* UIView+BackgroundShadow.swift */,
 				8B9FBC3D2630075E00D0B1C1 /* RecentlyUpdateAnimeTableViewCell.swift */,
+				8B9FBD2F2638FB2F00D0B1C1 /* TableViewCellCodable.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -282,6 +298,8 @@
 			children = (
 				8B9FBC41263008B300D0B1C1 /* FeaturedViewController.swift */,
 				8B9FBCD32630236600D0B1C1 /* AnimeViewController.swift */,
+				8B9FBD0A2635735100D0B1C1 /* SearchViewController.swift */,
+				8B9FBD1A26365D5600D0B1C1 /* SearchResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -295,6 +313,7 @@
 				8B9FBC842630152600D0B1C1 /* NineAnimatePath.swift */,
 				8B9FBCDD26302C0600D0B1C1 /* Anime.swift */,
 				8B9FBCF72635125E00D0B1C1 /* Episode.swift */,
+				8B9FBD1C26365D9100D0B1C1 /* SearchPage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -381,6 +400,16 @@
 				8B9FBCDF263294E000D0B1C1 /* EpisodeTableViewCell.swift */,
 			);
 			path = Anime;
+			sourceTree = "<group>";
+		};
+		8B9FBCFC2635644700D0B1C1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8B9FBD042635645C00D0B1C1 /* SimpleAnimeTableViewCell.swift */,
+				8B9FBD06263564BC00D0B1C1 /* AnimeSearchResultTableViewCell.swift */,
+				8B9FBD1E2638EA0B00D0B1C1 /* SearchNoResultsTableViewCell.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -521,6 +550,7 @@
 			files = (
 				8B9FBC38262FFB3300D0B1C1 /* FeaturedAnimeTableViewCell.swift in Sources */,
 				8B9FBCF82635125E00D0B1C1 /* Episode.swift in Sources */,
+				8B9FBD1D26365D9100D0B1C1 /* SearchPage.swift in Sources */,
 				8B9FBCE0263294E000D0B1C1 /* EpisodeTableViewCell.swift in Sources */,
 				8B9FBCB3263022B900D0B1C1 /* ConstraintViewDSL.swift in Sources */,
 				8B9FBCDC26302AF200D0B1C1 /* ServerPickerTableViewCell.swift in Sources */,
@@ -528,6 +558,7 @@
 				8B9FBCC2263022B900D0B1C1 /* Typealiases.swift in Sources */,
 				8B9FBC35262FFAF500D0B1C1 /* FeaturedAnimationView.swift in Sources */,
 				8B9FBCD1263022B900D0B1C1 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				8B9FBD07263564BC00D0B1C1 /* AnimeSearchResultTableViewCell.swift in Sources */,
 				8B9FBC832630138200D0B1C1 /* NineAnimator.swift in Sources */,
 				8B9FBCBA263022B900D0B1C1 /* ConstraintInsetTarget.swift in Sources */,
 				8B9FBCCD263022B900D0B1C1 /* ConstraintRelatableTarget.swift in Sources */,
@@ -541,6 +572,7 @@
 				8B9FBC8726301D1000D0B1C1 /* SwiftyJSON.swift in Sources */,
 				8B9FBCC9263022B900D0B1C1 /* ConstraintView+Extensions.swift in Sources */,
 				8B9FBCCF263022B900D0B1C1 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				8B9FBD1B26365D5600D0B1C1 /* SearchResultViewController.swift in Sources */,
 				8B9FBCC4263022B900D0B1C1 /* ConstraintOffsetTarget.swift in Sources */,
 				8B9FBCDE26302C0600D0B1C1 /* Anime.swift in Sources */,
 				8B9FBC3B263005ED00D0B1C1 /* UIView+BackgroundShadow.swift in Sources */,
@@ -548,11 +580,14 @@
 				8B9FBCAF263022B900D0B1C1 /* LayoutConstraintItem.swift in Sources */,
 				8B9FBC852630152600D0B1C1 /* NineAnimatePath.swift in Sources */,
 				8B9FBCB4263022B900D0B1C1 /* ConstraintPriorityTarget.swift in Sources */,
+				8B9FBD0B2635735100D0B1C1 /* SearchViewController.swift in Sources */,
 				8B9FBCBC263022B900D0B1C1 /* ConstraintMakerRelatable+Extensions.swift in Sources */,
+				8B9FBD302638FB2F00D0B1C1 /* TableViewCellCodable.swift in Sources */,
 				8B9FBC42263008B300D0B1C1 /* FeaturedViewController.swift in Sources */,
 				8B9FBCCE263022B900D0B1C1 /* LayoutConstraint.swift in Sources */,
 				8B9FBCB9263022B900D0B1C1 /* ConstraintPriority.swift in Sources */,
 				8B9FBCBF263022B900D0B1C1 /* ConstraintView.swift in Sources */,
+				8B9FBD052635645C00D0B1C1 /* SimpleAnimeTableViewCell.swift in Sources */,
 				8B9FBCAE263022B900D0B1C1 /* ConstraintMultiplierTarget.swift in Sources */,
 				8B9FBCBD263022B900D0B1C1 /* ConstraintConfig.swift in Sources */,
 				8B9FBC1B262FF8E200D0B1C1 /* AppDelegate.swift in Sources */,
@@ -561,6 +596,7 @@
 				8B9FBC1D262FF8E200D0B1C1 /* SceneDelegate.swift in Sources */,
 				8B9FBCC1263022B900D0B1C1 /* ConstraintLayoutSupport.swift in Sources */,
 				8B9FBCBB263022B900D0B1C1 /* ConstraintDirectionalInsetTarget.swift in Sources */,
+				8B9FBD1F2638EA0B00D0B1C1 /* SearchNoResultsTableViewCell.swift in Sources */,
 				8B9FBC4D26300A5E00D0B1C1 /* AnimeLink.swift in Sources */,
 				8B9FBCB5263022B900D0B1C1 /* ConstraintInsets.swift in Sources */,
 				8B9FBCC3263022B900D0B1C1 /* ConstraintConstantTarget.swift in Sources */,
